@@ -1,0 +1,22 @@
+[
+  {
+    "repository" : "android_device_advan_X1-kernel",
+    "target_path": "device/advan/X1-kernel"
+  },
+  {
+    "repository": "proprietary_vendor_advan_X1",
+    "target_path": "vendor/advan/X1"
+  },
+  {
+    "repository": "LumineDroid/android_device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "bynx",
+    "remote": "github"
+  },
+  {
+    "repository": "LumineDroid/android_hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch": "bynx",
+    "remote": "github"
+  }
+]

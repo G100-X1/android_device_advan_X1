@@ -10,8 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/advan/X1/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common LumineDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+LUMINE_MAINTAINER := Luigiee
 
 PRODUCT_NAME := lineage_X1
 PRODUCT_DEVICE := X1
