@@ -10,10 +10,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/advan/X1/device.mk)
 
-# Inherit some common LumineDroid stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-LUMINE_MAINTAINER := Luigiee
 
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := false
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGING := true
+PERF_ANIM_OVERRIDE := true
+
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X1
 PRODUCT_DEVICE := X1
 PRODUCT_MANUFACTURER := ADVAN
