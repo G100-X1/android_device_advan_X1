@@ -6,8 +6,6 @@
 # Inherit generic_ramdisk product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
--include vendor/lineage-priv/keys/keys.mk
-
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
